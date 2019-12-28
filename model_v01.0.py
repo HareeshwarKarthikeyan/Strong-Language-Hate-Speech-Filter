@@ -87,7 +87,7 @@ def model_hate():
   return model
 
 model=model_hate()
-model.compile(optimizer='adam',loss='sparse_categorical_crossentropy',metrics=['accuracy'])
+model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 print(model.summary())
 
 print("TOXIC")
